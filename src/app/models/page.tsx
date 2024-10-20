@@ -46,8 +46,9 @@ export default function NextPage() {
         {currentModels.length >= 0 ? (
           currentModels.map((item) => (
             <Col key={item.Model_ID} span={8} xs={24} sm={12} md={8} lg={6} xl={4}>
-              <Card title={item.Model_Name} hoverable className="flex flex-col gap-2 h-16">
+              <Card title={item.Model_Name} hoverable style={{ height: 220 }}>
                 <Typography.Text>Make Name: {item.Make_Name}</Typography.Text>
+                <br />
                 <Typography.Text>Model Name: {item.Model_Name}</Typography.Text>
               </Card>
             </Col>
